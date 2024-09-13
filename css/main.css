@@ -1,0 +1,280 @@
+:root {
+    /* Colors */
+    --red-color: #E50000;
+    --black-color: #000000;
+    --linear-black-color: #00000085;
+    --white-color: #f5f3f3;
+ 
+    /* Font Types */
+    --bold-font: 'Franklin-Gothic';
+    --body-font: 'Ebrima';
+    --sub-font: 'Lucida-Console';
+ 
+    /* Font Sizes Mobile */
+    --frankgot-mobile-bigger-size: 3.75rem;
+    --frankgot-mobile-big-size: 2.8125rem;
+    --frankgot-mobile-mid-size: 1.875rem;
+    --frankgot-mobile-small-size: 1.25rem;
+    --lucida-console-mobile-size: 0.875rem;
+    --ebrima-mobile-small-size: 0.75rem;
+    --ebrima-mobile-big-size: 0.875rem;
+    --ebrima-mobile-footer-size: 0.625rem;
+ 
+    /* Font Sizes Tablet */
+    --frankgot-tablet-bigger-size: 6.25rem;
+    --frankgot-tablet-big-size:3.75rem;
+    --frankgot-tablet-mid-size: 2.8125rem;
+    --frankgot-tablet-small-size: 1.25rem;
+    --lucida-console-tablet-small-size: 0.75rem;
+    --lucida-console-tablet-mid-size: 0.9375rem;
+    --lucida-console-tablet-big-size: 1.5625rem;
+    --ebrima-tablet-small-size: 0.75rem;
+    --ebrima-tablet-big-size: 0.9375rem;
+ 
+     /* Font Sizes Desktop */
+     --frankgot-desktop-bigger-size: 9.375rem;
+     --frankgot-desktop-big-size: 5.625rem;
+     --frankgot-desktop-mid-size: 3.75rem;
+     --frankgot-desktop-small-size:  2.5rem;
+     --lucida-console-desktop-small-size: 1.1875rem;
+     --lucida-console-desktop-mid-size: 1.375rem;
+     --lucida-console-desktop-big-size: 1.875rem;
+     --lucida-console-desktop-bigger-size: 2.5rem;
+     --ebrima-desktop-small-size: 0.9375rem;
+     --ebrima-desktop-big-size: 1.25rem;
+    
+ }
+
+ /* cloudconvert.com for fonts face convertion. Thank You */
+@font-face {
+    font-family: 'Franklin-Gothic';
+    src: url('../fonts/franklin-gothic.eot');
+    src: url('../fonts/franklin-gothic.otf') format('embedded-opentype'),
+        url('../fonts/franklin-gothic.woff2') format('woff2'),
+        url('../fonts/franklin-gothic.woff') format('woff'),
+        url('../fonts/franklin-gothic.ttf') format('truetype'),
+        url('../fonts/franklin-gothic.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lucida-Console';
+    src: url('../fonts/lucida-console.eot');
+    src: url('../fonts/lucida-console.otf') format('embedded-opentype'),
+        url('../fonts/lucida-console.woff2') format('woff2'),
+        url('../fonts/lucida-console.woff') format('woff'),
+        url('../fonts/lucida-console.ttf') format('truetype'),
+        url('../fonts/lucida-console.svg') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ebrima';
+    src: url('../fonts/ebrima-regular.eot');
+    src: url('../fonts/ebrima-regular.otf') format('embedded-opentype'),
+        url('../fonts/ebrima-regular.woff2') format('woff2'),
+        url('../fonts/ebrima-regular.woff') format('woff'),
+        url('../fonts/ebrima-regular.ttf') format('truetype'),
+        url('../fonts/ebrima-regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Linear Background Setup */
+.linear-bg {
+    position: absolute;
+    opacity: 0.3;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(1800deg, var(--linear-black-color) 0%, var(--linear-black-color) 20%, var(--red-color) 50%, var(--red-color) 60%, var(--linear-black-color) 80%, var(--linear-black-color) 100%); 
+    
+}
+
+html {
+    height: auto;
+    background-color: var(--black-color);
+    font-size: 16px;
+}
+
+/* INTRO.HTML CSS START */
+.no-use{
+    display: none;
+}
+#intro-page{
+    width: 100%;
+   height: 100dvh;
+   display: grid;
+   justify-content: center; 
+   align-items: center;
+}
+
+
+.owner-name2{
+    font-size: var(--ebrima-mobile-big-size);
+    font-family: var(--body-font);
+    color: var(--white-color);
+    text-align: center;
+    line-height: 1;
+    z-index: 3;
+    text-transform: uppercase; 
+    letter-spacing: .8rem;
+    position: relative;
+    margin-top: 50px;
+        
+}
+.owner-name span{
+    display: inline;
+    text-align: center;
+}
+
+
+#intro-text-switch{
+    z-index: 1;
+    justify-self: center; 
+   align-self: center;
+   text-transform: uppercase;
+   margin-top: 3rem;
+}
+
+.top-text-switch,
+.bottom-text-switch{
+    font-family: var(--bold-font);
+    font-size: var(--frankgot-mobile-mid-size);
+    color:transparent;
+    -webkit-text-stroke:1px var(--white-color);
+    font-weight: bold;
+    justify-content: center; 
+   align-items: center;
+   display: grid;
+}
+
+.middle-text-switch{
+    font-family: var(--bold-font);
+    font-size: var(--frankgot-mobile-big-size);
+    color:var(--white-color);
+    justify-content: center; 
+   align-items: center;
+   display: grid;
+}
+#intro-arrow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.intro-arrow{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: -3rem;
+    z-index: 3;
+}
+
+.discount-caption{
+    color:var(--white-color);
+    font-size: var(--ebrima-tablet-small-size);
+    font-family: var(--body-font);
+    z-index: 1;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+    display: grid;
+    margin: -50px 0 30px 0;
+}
+@media screen and (min-width: 768px) {
+    .no-use{
+        display: block;
+    }
+
+    .no-use2{
+        display: none;
+    }
+
+
+    .owner-name{
+        font-size: var(--ebrima-tablet-small-size);
+        font-family: var(--body-font);
+        color: var(--white-color);
+        text-align: center;
+        line-height: 2;
+        z-index: 2;
+        text-transform: uppercase;
+        align-items: center; 
+        align-self: center;
+             
+    }
+    .owner-name span{
+        display: block;
+        text-align: center;
+    }
+    #intro-text-switch{
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+       text-transform: uppercase;
+       margin-top: 3rem;
+       margin-left: 5rem;
+    }
+
+    .top-text-switch,
+    .bottom-text-switch{
+        font-size: var(--frankgot-tablet-mid-size);
+    }
+
+    .middle-text-switch{
+        font-size: var(--frankgot-tablet-big-size);
+    }
+
+    #intro-arrow{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .intro-arrow{
+        margin-top: -5rem;
+    }
+
+    .discount-caption{
+        color:var(--white-color);
+        font-size: var(--ebrima-tablet-small-size);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .owner-name{
+        font-size: var(--ebrima-desktop-small-size);
+    }
+
+    #intro-text-switch{
+       margin-top: 1rem;
+       margin-left: 7rem;
+    }
+
+    .top-text-switch,
+    .bottom-text-switch{
+        font-size: var(--frankgot-desktop-mid-size);
+    }
+
+    .middle-text-switch{
+        font-size: var(--frankgot-desktop-big-size);
+    }
+
+
+    .intro-arrow{
+        margin-top: -6rem;
+    }
+
+    .discount-caption{
+        font-size: var(--ebrima-desktop-small-size); 
+    }
+}
+
+/* INTRO.HTML CSS END */
