@@ -278,3 +278,272 @@ html {
 }
 
 /* INTRO.HTML CSS END */
+
+
+
+/* INDEX.HTML CSS START */
+/* MOBILE NAVIGATION START */
+ 
+
+.no-use{
+    display: none;
+ }
+
+ #header{
+    margin-top: 1rem;
+    background-color: var(--black-color);
+    height: 5.125rem;
+    justify-content: center;
+    align-content: center;
+    border-bottom: 2px solid var(--red-color);
+}
+#top-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 996; 
+    background-color: var(--black-color);
+}
+.mobilie-top-logo{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.mobilie-top-logo img{
+    width: 70px;
+}
+.container-mobile-top-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.container-mobile-top-logo img{
+    width: 30px; 
+}
+.container-mobile-top-logo-swap{
+    transform: rotate(90deg);
+    transition: transform .3s ease-in-out;
+    animation: low 2s infinite;
+}
+
+
+/* Animation for the Menu Icon Swap on tap/Click */
+
+@keyframes low {
+    0%,80%, 100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 5px; 
+    }
+}
+.globe-size{
+       
+    display: flex; 
+   justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+.globe-size img{
+    width: 40px;
+    height: 40px;
+}
+/* MOBILE NAVIGATION END */
+
+@media screen and (min-width: 768px) {
+    /* TABLET NAVIGATION START */
+    .no-use{
+        display: block;
+     }
+     .no-use2{
+        display: none;
+     }
+    
+    #header{
+        background-color: var(--black-color);
+        height: 2.125rem;
+        align-content: center;
+        position: sticky;
+        z-index: 9;
+    }
+    #owners-initial{
+        font-family: var(--body-font);
+        font-size: var(--ebrima-tablet-big-size);
+    }
+    #owners-initial a{
+        text-decoration: none;
+        color: var(--white-color);
+    }
+
+    #head-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    #head-nav ul li {
+        position: relative;
+    }
+   
+    #head-nav ul li a {
+        font-family: var(--body-font);
+        font-size: var(--ebrima-tablet-small-size);
+        text-decoration: none;
+        color: var(--white-color);
+        transition: color .3s ease-in-out;
+    }
+    
+    #head-nav ul li a::after {
+        content: "";
+        position: absolute;
+        left: 50%; 
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: var(--red-color);
+        transition: width 0.6s ease-in-out, left 0.6s ease-in-out;
+    }
+    
+    #head-nav ul li a:hover::after {
+        width: 100%;
+        left: 0; 
+    }
+   
+    #cv-resume{
+        text-align: center;
+    }
+  
+
+    #cv-resume button {
+     background-color: var(--red-color);
+     font-family: var(--body-font);
+     font-size: var(--ebrima-mobile-footer-size);
+     cursor: pointer;
+     color: var(--white-color);
+     height: 25px;
+     text-transform: uppercase;
+     text-align: center;
+     border: 1px solid var(--white-color); 
+     position: relative;
+     overflow: hidden; 
+     background: linear-gradient(to left, var(--red-color) 50%, var(--black-color) 50%);
+     background-size: 200% 100%; 
+     background-position: 100% bottom; 
+     transition: background-position 0.5s ease-in-out; 
+    }
+
+    #cv-resume button:hover {
+    background-position: 100% bottom;
+    border: 1px solid var(--white-color); 
+    transition: border 1s ease-in-out, background-position 0.5s ease-in-out;
+    background: linear-gradient(to right, var(--red-color) 50%, var(--black-color) 50%);
+    background-size: 200% 100%;  
+    }
+    .globe-size{
+       
+        display: flex; 
+       justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+    }
+    .globe-size img{
+        width: 20px;
+        height: 20px;
+    }
+
+    #globe-icon {
+        transition: opacity 0.9s ease-in-out; 
+        opacity: 1;
+    }
+
+    #theme-switch button {
+        border-radius: 30px;
+        color: var(--white-color);
+        background-color: var(--black-color);
+        border: transparent;
+    }
+    #head-nav ul li:nth-child(2)::after {
+        content: "";
+        display: inline-block;
+        width: 12px; 
+        height: 10px; 
+        background-image: url('../images/nav-arrow-works.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 3px; 
+    }
+ 
+    /* TABLET NAVIGATION SECTION END */
+
+}
+
+@media screen and (min-width: 1280px) {
+     /* DESKTOP NAVIGATION START */
+     #header{
+        height: 3.125rem;
+        border-bottom: 2px solid var(--red-color);
+    }
+    #owners-initial{
+        font-family: var(--body-font);
+        font-size: var(--ebrima-desktop-big-size);
+    }
+
+    #head-nav ul {
+        gap: 4rem;
+    }
+    
+   
+    #head-nav ul li a {
+        font-family: var(--body-font);
+        font-size: var(--ebrima-desktop-small-size);
+    }
+    
+    #cv-resume button{
+        font-family: var(--body-font);
+        font-size: var(--ebrima-mobile-small-size);
+        height: 25px;
+      
+    }
+
+    #cv-resume button {
+     background-color: var(--red-color);
+     font-family: var(--body-font);
+     font-size: var(--ebrima-mobile-small-size);
+   
+    }
+
+    .globe-size img{
+        width: 25px;
+        height: 25px;
+    }
+    #theme-switch button {
+        border-radius: 30px;
+        color: var(--white-color);
+        background-color: var(--black-color);
+        border: transparent;
+    }
+    #head-nav ul li:nth-child(2)::after {
+        content: "";
+        display: inline-block;
+        width: 15px; 
+        height: 10px; 
+        background-image: url('../images/nav-arrow-works.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-left: 3px; 
+    }
+    
+
+    /* DESKTOP NAVIGATION SECTION END */
+
+}
+
+/* INDEX.HTML CSS END */
