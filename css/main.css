@@ -482,6 +482,70 @@ html {
             transform: rotate(0deg); /* Rotate to 360 degrees */
         }
     }
+    #experiences{
+        color: var(--white-color);
+        justify-items: center;
+    }
+    #experiences h2{
+        margin-top: 3rem;
+       font-family: var(--bold-font);
+       font-size: var(--frankgot-mobile-mid-size);
+       text-transform: uppercase;
+    }
+    #path-3{
+        margin-top: -1rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    #path-3 .hr-line{
+        width: 354px;          
+    }
+    #path-4{
+        margin-top: -5.5rem;
+        display: flex;
+        margin-left: -2.6rem;
+        
+    }
+    #path-4 .vr-line{
+        height: 354px;          
+    }
+    #experiences h3{
+        position: absolute;
+        margin-top: 5.5rem;
+        font-family: var(--sub-font);
+        font-size: var(--lucida-console-mobile-size);
+        text-transform: uppercase;
+    }
+    #exp-note{
+        position: absolute;
+        display: flex;
+        margin-top: 8rem;
+        align-items: center;
+    }
+    #exp-note .exp-note{
+        font-family: var(--body-font);
+        font-size: var(--ebrima-mobile-small-size);
+       width: 9rem;
+       text-align: center;
+       justify-content: space-between;
+    }
+    #exp-note img:nth-child(1){
+       padding-right: 2rem;
+     }
+     #exp-note .r-arrow{
+        padding-left: 2rem;
+      }
+      #path-5{
+        margin-top:-1rem;
+        margin-left: 2.5rem;
+      }
+      #path-5 .hr-line{
+       width: 165px;
+      }
+      #experiences .vr-single{
+        margin-top: -.5rem;
+        height: 4rem;
+      }
     
 
     @media screen and (min-width: 768px) {
@@ -718,6 +782,73 @@ html {
             transform: rotate(0deg); /* Rotate to 360 degrees */
         }
     }
+    #experiences{
+        color: var(--white-color);
+        justify-items: center;
+    }
+    #experiences h2{
+        margin-top: 3rem;
+       font-family: var(--bold-font);
+       font-size: var(--frankgot-tablet-mid-size);
+       text-transform: uppercase;
+    }
+    #path-3{
+        margin-top: -2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 2.6rem;
+    }
+    #path-3 .hr-line{
+        width: 600px;
+                  
+    }
+    #path-4{
+        margin-top: -6.5rem;
+        display: flex;
+        margin-left: 6.5rem;
+        
+    }
+    #path-4 .vr-line{
+        height: 270px;          
+    }
+    #experiences h3{
+        position: absolute;
+        margin-top: 6.5rem;
+        font-family: var(--sub-font);
+        font-size: var(--ebrima-tablet-big-size);
+        text-transform: uppercase;
+    }
+    #exp-note{
+        position: absolute;
+        display: flex;
+        margin-top: 10rem;
+        align-items: center;
+    }
+    #exp-note .exp-note{
+        font-family: var(--body-font);
+        font-size: var(--ebrima-tablet-small-size);
+       width: 19rem;
+       text-align: center;
+       justify-content: space-between;
+    }
+    #exp-note img:nth-child(1){
+       padding-right: 2rem;
+     }
+     #exp-note .r-arrow{
+        padding-left: 2rem;
+      }
+      #path-5{
+        margin-top:-1.5rem;
+        margin-left: 2.5rem;
+      }
+      #path-5 .hr-line{
+       width: 270px;
+      }
+      #experiences .vr-single{
+        margin-top: -.5rem;
+        height: 4rem;
+        margin-left: .5rem;
+      }
     
  
     /* TABLET NAVIGATION SECTION END */
@@ -887,6 +1018,70 @@ html {
             transform: rotate(0deg); /* Rotate to 360 degrees */
         }
     }
+   
+    #experiences h2{
+        margin-top: 3rem;
+       font-family: var(--bold-font);
+       font-size: var(--frankgot-desktop-mid-size);
+       text-transform: uppercase;
+    }
+    #path-3{
+        margin-top: -2.5rem;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: 5rem;
+    }
+    #path-3 .hr-line{
+        width: 1070px;
+                  
+    }
+    #path-4{
+        margin-top: -8.5rem;
+        display: flex;
+        margin-left: 9rem;
+        
+    }
+    #path-4 .vr-line{
+        height: 310px;          
+    }
+    #experiences h3{
+        position: absolute;
+        margin-top: 7.5rem;
+        font-family: var(--sub-font);
+        font-size: var(--ebrima-tablet-big-size);
+        text-transform: uppercase;
+    }
+    #exp-note{
+        position: absolute;
+        display: flex;
+        margin-top: 10rem;
+        align-items: center;
+    }
+    #exp-note .exp-note{
+        font-family: var(--body-font);
+        font-size: var(--ebrima-tablet-small-size);
+       width: 29rem;
+       text-align: center;
+       justify-content: space-between;
+    }
+    #exp-note img:nth-child(1){
+       padding-right: 2rem;
+     }
+     #exp-note .r-arrow{
+        padding-left: 2rem;
+      }
+      #path-5{
+        margin-top:-2.5rem;
+        margin-left: 2.5rem;
+      }
+      #path-5 .hr-line{
+       width: 510px;
+      }
+      #experiences .vr-single{
+        margin-top: -.5rem;
+        height: 4rem;
+        margin-left: 2rem;
+      }
 
 }
 
