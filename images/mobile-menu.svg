@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.969" height="20" viewBox="0 0 22.969 20">
+  <g id="mobile-menu" transform="translate(-3.5 1)">
+    <path id="top-line" d="M15,1H0V-1H15Z" transform="translate(7.5 0)" fill="#fdffff"/>
+    <path id="middle-line" d="M22.969,1H0V-1H22.969Z" transform="translate(3.5 9)" fill="#fdffff"/>
+    <path id="bottom-line" d="M15,1H0V-1H15Z" transform="translate(7.5 18)" fill="#fdffff"/>
+  </g>
+</svg>
