@@ -80,8 +80,8 @@
         url('../fonts/ebrima-regular.woff') format('woff'),
         url('../fonts/ebrima-regular.ttf') format('truetype'),
         url('../fonts/ebrima-regular.svg') format('svg');
-    font-weight: 400;
-    font-style: normal;
+    font-weight: lighter;
+    font-style:normal;   
     font-display: swap;
 }
 
@@ -95,7 +95,24 @@
     background: linear-gradient(1800deg, var(--linear-black-color) 0%, var(--linear-black-color) 20%, var(--red-color) 50%, var(--red-color) 60%, var(--linear-black-color) 80%, var(--linear-black-color) 100%); 
     
 }
+.scroll-bar{
+    height: 5px;
+    position: fixed;
+    top:0;
+    z-index: 999;
+    background-color: #d61919;
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-bar linear;
+    animation-timeline: scroll();
+}
 
+@keyframes scroll-bar{
+    to {
+        scale: 1 1;
+    }
+}
 html {
     height: auto;
     background-color: var(--black-color);
@@ -355,7 +372,119 @@ html {
 }
 /* MOBILE NAVIGATION END */
 
-@media screen and (min-width: 768px) {
+/* Welcome Section */
+    #welcome-note{
+        color: var(--white-color);
+        margin-top:1rem;
+       justify-items: center;
+    }
+    #welcome-note h2{
+        font-family: var(--bold-font);
+        font-size: var(--frankgot-mobile-mid-size);
+        text-transform: uppercase;
+        align-content: center;
+       
+    }
+    #welcome-note h3{
+        margin-top: 2rem;
+        font-family: var(--body-font);
+        font-size: var(--ebrima-mobile-big-size);
+        text-transform: uppercase;
+        align-content: center;
+        font-weight: lighter;
+        padding: 2%;
+    }
+    #welcome-note  .w-note{
+        width: 80%;
+        /* margin-top: 2rem; */
+        font-family: var(--body-font);
+        font-size: var(--ebrima-mobile-small-size);
+        align-content: center;
+        text-align: center;
+        padding-bottom: .9rem;
+    }
+   
+
+    .click-button {
+    background-color: var(--red-color);
+    font-family: var(--body-font);
+    font-size: var(--ebrima-mobile-footer-size);
+    cursor: pointer;
+    color: var(--white-color);
+    height: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid var(--white-color); 
+    }
+
+  
+
+    .path-l-c{
+        display: flex;
+        align-items: center;
+    }
+    .path-c-l{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    #path-1{
+        margin-left: .5rem;
+    }
+    #path-2{
+        margin-top: -14.2rem;
+        margin-left: 10rem;
+    }
+
+    .hr-line {
+        border: none;
+        border-top: 5px solid var(--red-color); 
+        width: 154px;         
+        height: 0;            
+    }
+    .vr-line {
+        border: none;
+        border-left: 5px solid var(--red-color); 
+        width: 0px;         
+        height: 272px; 
+                   
+    }
+    .gradient-circle1 {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, var(--red-color), #fcee21);
+        animation: rotate 2s linear infinite; 
+    }
+    
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg); /* Start from 0 degrees */
+        }
+        to {
+            transform: rotate(360deg); /* Rotate to 360 degrees */
+        }
+    }
+    .gradient-circle2 {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, var(--red-color), #fcee21);
+        animation: rotate-inverse 2s linear infinite; 
+    }
+    
+    @keyframes rotate-inverse {
+        from {
+            transform: rotate(360deg); /* Start from 0 degrees */
+        }
+        to {
+            transform: rotate(0deg); /* Rotate to 360 degrees */
+        }
+    }
+    
+
+    @media screen and (min-width: 768px) {
     /* TABLET NAVIGATION START */
     .no-use{
         display: block;
@@ -479,7 +608,117 @@ html {
         background-size: contain;
         background-repeat: no-repeat;
         margin-left: 3px; 
+        animation: bounce 2s infinite ;
     }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-1px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+    
+    /* welcome section */
+
+    #welcome-note{
+        color: var(--white-color);
+        margin-top:1rem;
+       justify-items: left;
+       
+    }
+    #welcome-note h2{
+        font-family: var(--bold-font);
+        font-size: var(--frankgot-tablet-big-size);
+        text-transform: uppercase;
+        align-content: center;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    #welcome-note h3{
+        margin-top: 1rem;
+        font-family: var(--body-font);
+        font-size: var(--ebrima-tablet-big-size);
+        text-transform: uppercase;
+        text-align: left;
+        
+        font-weight: lighter;
+        padding-left:0;
+    }
+    #welcome-note  .w-note{
+        width: 100%;
+        /* margin-top: 2rem; */
+        font-family: var(--body-font);
+        font-size: var(--ebrima-tablet-small-size);
+        align-content: center;
+        text-align: left;
+        padding-bottom: .9rem;
+        line-height: 1rem;
+    }
+   
+
+   
+
+  
+
+    
+    #path-1{
+        margin-left: 5.5rem;
+    }
+    #path-2{
+        margin-top: -12.2rem;
+        margin-left: 9.8rem;
+    }
+
+    .hr-line {
+        border: none;
+        border-top: 5px solid var(--red-color); 
+        width: 240px;         
+        height: 0;            
+    }
+    .vr-line {
+        border: none;
+        border-left: 5px solid var(--red-color); 
+        width: 0px;         
+        height: 276px; 
+                   
+    }
+    .gradient-circle1 {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, var(--red-color), #fcee21);
+        animation: rotate 2s linear infinite; 
+    }
+    
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg); /* Start from 0 degrees */
+        }
+        to {
+            transform: rotate(360deg); /* Rotate to 360 degrees */
+        }
+    }
+    .gradient-circle2 {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, var(--red-color),  #fcee21);
+        animation: rotate-inverse 2s linear infinite; 
+    }
+    
+    @keyframes rotate-inverse {
+        from {
+            transform: rotate(360deg); /* Start from 0 degrees */
+        }
+        to {
+            transform: rotate(0deg); /* Rotate to 360 degrees */
+        }
+    }
+    
  
     /* TABLET NAVIGATION SECTION END */
 
@@ -536,13 +775,118 @@ html {
         width: 15px; 
         height: 10px; 
         background-image: url('../images/nav-arrow-works.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
         margin-left: 3px; 
+        animation: bounce 2s infinite 1s ;
     }
+   
     
 
     /* DESKTOP NAVIGATION SECTION END */
+
+     /* welcome section */
+
+     #welcome-note{
+        color: var(--white-color);
+       justify-items: left;
+       margin-top: 2rem;
+       
+    }
+    #welcome-note h2{
+       
+        font-size: var(--frankgot-desktop-big-size);
+        text-transform: uppercase;
+        align-content: center;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    #welcome-note h3{
+        margin-top: 1rem;
+        font-family: var(--body-font);
+        font-size: var(--ebrima-desktop-big-size);
+        text-transform: uppercase;
+        text-align: left;
+        
+        font-weight: lighter;
+        padding-left:0;
+    }
+    #welcome-note  .w-note{
+        width: 100%;
+        
+        font-family: var(--body-font);
+        font-size: var(--ebrima-desktop-small-size);
+        align-content: center;
+        text-align: left;
+        padding-bottom: .9rem;
+        line-height: 1.3rem;
+        word-spacing: 5px;
+    }
+   
+
+   
+    .click-button {
+      
+        font-size: var(--ebrima-desktop-footer-size);
+        cursor: pointer;
+        color: var(--white-color);
+        height: 35px;
+        border: 2px solid var(--white-color); 
+        }
+  
+
+    
+    #path-1{
+        margin-left: 4.5rem;
+    }
+    #path-2{
+        margin-top: -15.2rem;
+        margin-left: 17rem;
+    }
+
+    .hr-line {
+        border: none;
+        border-top: 5px solid var(--red-color); 
+        width: 500px;         
+        height: 0;            
+    }
+    .vr-line {
+        border: none;
+        border-left: 5px solid var(--red-color); 
+        width: 0px;         
+        height: 370px; 
+                   
+    }
+    .gradient-circle1 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, var(--red-color), #fcee21);
+        animation: rotate 2s linear infinite; 
+    }
+    
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg); /* Start from 0 degrees */
+        }
+        to {
+            transform: rotate(360deg); /* Rotate to 360 degrees */
+        }
+    }
+    .gradient-circle2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(45deg, var(--red-color),  #fcee21);
+        animation: rotate-inverse 2s linear infinite; 
+    }
+    
+    @keyframes rotate-inverse {
+        from {
+            transform: rotate(360deg); /* Start from 0 degrees */
+        }
+        to {
+            transform: rotate(0deg); /* Rotate to 360 degrees */
+        }
+    }
 
 }
 
