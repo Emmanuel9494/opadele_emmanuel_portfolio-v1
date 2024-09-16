@@ -325,8 +325,122 @@ input[type="range"] {
     outline: 3px solid #bd0e0e;
     outline-offset: 0.125rem;
   }
+  /* technology section */
+  #tech-section{
+    justify-items: center;
+    color: var(--white-color);
+  }
+  #tech-section .tech-head{
+    margin-top: 1rem;
+    font-family: var(--bold-font);
+    font-size:var(--frankgot-mobile-mid-size) ;
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+  }
+  #tech-section .tech-sub{
+    font-family: var(--sub-font);
+    font-size:var(--lucida-console-mobile-size) ;
+    text-transform: uppercase;
+  }
+
+  #tech-section .vr-line{
+    height: 4rem;
+  }
+  #tech-list{
+    display: flex;
+    align-items: center;
+    margin-left: -6rem;
+    margin-top: 1.5rem;
+  }
+  #tech-list .vr-line{
+    height: 10rem;
+  }
+ 
+#tech-section li{
+    list-style: none;
+}
 
 
+  
+  #tech-list-left {
+    text-align: right; 
+    padding-right: 2rem;
+    font-family: var(--sub-font);
+    font-size:var(--lucida-console-mobile-size) ;
+    text-transform: uppercase;
+  }
+  #tech-list-left li span {
+    padding-bottom: 0.5rem;
+    display: inline-block; 
+  }
+  #tech-list-right li span {
+    padding-bottom: 0.5rem;
+    display: inline-block; 
+  }
+  
+  #tech-list-right {
+    text-align: left; 
+    padding-left: 2rem;
+    font-family: var(--sub-font);
+    font-size:var(--lucida-console-mobile-size) ;
+    text-transform: uppercase;
+  }
+  #tech-arrow{
+    margin-top: 2rem;
+    display: flex;
+  }
+  #tech-arrow img{
+    cursor: pointer;
+  }
+  #tech-arrow img:nth-child(1){
+    margin-right: 7rem;
+  }
+  .cta-logo{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content:space-between;
+  }
+  .cta-left{
+    margin-left: -.4rem;
+  }
+  .cta-right{
+    margin-left: 2rem;
+  }
+  #cta-main a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: var(--sub-font);
+    font-size:var(--lucida-console-mobile-size) ;
+    text-transform: uppercase;
+  }
+  #cta-main img{
+    padding: 0 1rem 0 1rem;
+    margin-left: 2.4rem;
+  }
+  #path-8{
+    margin-top:-.5rem;
+    margin-left: .5rem;
+  }
+  #path-8 .hr-line{
+   width: 325px;
+  }
+  #vr-spread3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #vr-spread3 .vr-single{
+    margin-top: -.5rem;
+    height: 2rem;
+  }
+  .f-sapce1{
+    margin-right: 18rem;
+  }
+  .f-sapce2{
+    margin-left: 3rem;
+    margin-right: -.5rem;
+  }
 
 
 @media screen and (min-width: 768px) {
@@ -1331,6 +1445,123 @@ input[type="range"] {
         width: 20px;
         height: 20px;
       }
+
+       /* technology section */
+  #tech-section .tech-head{
+    margin-top: 1rem;
+    font-family: var(--bold-font);
+    font-size:var(--frankgot-tablet-mid-size) ;
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+  }
+  #tech-section .tech-sub{
+    font-family: var(--sub-font);
+    font-size:var(--lucida-console-tablet-size) ;
+    text-transform: uppercase;
+  }
+
+  #tech-section .vr-line{
+    height: 4rem;
+  }
+  #tech-list{
+    display: flex;
+    align-items: center;
+    margin-left: -6rem;
+    margin-top: 1.5rem;
+  }
+  #tech-list .vr-line{
+    height: 12rem;
+  }
+ 
+#tech-section li{
+    list-style: none;
+}
+
+
+  
+  #tech-list-left {
+    text-align: right; 
+    padding-right: 2rem;
+    font-family: var(--sub-font);
+    font-size:var(--lucida-console-tablet-size) ;
+    text-transform: uppercase;
+  }
+  #tech-list-left li span {
+    padding-bottom: 0.5rem;
+    display: inline-block; 
+  }
+  #tech-list-right li span {
+    padding-bottom: 0.5rem;
+    display: inline-block; 
+  }
+  
+  #tech-list-right {
+    text-align: left; 
+    padding-left: 2rem;
+    font-family: var(--sub-font);
+    font-size:var(--lucida-console-tablet-size) ;
+    text-transform: uppercase;
+  }
+  #tech-arrow{
+    margin-top: 2rem;
+    display: flex;
+  }
+  #tech-arrow img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  #tech-arrow img:nth-child(1){
+    margin-right: 7rem;
+  }
+  .cta-logo{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content:space-between;
+  }
+  .cta-left{
+    margin-left: -.4rem;
+  }
+  .cta-right{
+    margin-left: 2rem;
+  }
+  #cta-main a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: var(--sub-font);
+    font-size:var(--lucida-console-tablet-size) ;
+    text-transform: uppercase;
+  }
+  #cta-main img{
+    width: 150px;
+    height: 110px;
+    padding: 0 1rem 0 1rem;
+    margin-left: 2.4rem;
+  }
+  #path-8{
+    margin-top:-1rem;
+    margin-left: .5rem;
+  }
+  #path-8 .hr-line{
+   width: 661px;
+  }
+  #vr-spread3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #vr-spread3 .vr-single{
+    margin-top: -.5rem;
+    height: 3rem;
+  }
+  .f-sapce1{
+    margin-right: 23rem;
+  }
+  .f-sapce2{
+    margin-left: 20rem;
+    margin-right: -.5rem;
+  }
  
     /* TABLET NAVIGATION SECTION END */
 
@@ -1741,6 +1972,115 @@ input[type="range"] {
     font-family: var(--bold-font);
     font-size: var(--frankgot-tablet-small-size);
 }
+  /* technology section */
+  #tech-section .tech-head{
+    margin-top: 1rem;
+    font-family: var(--bold-font);
+    font-size:var(--frankgot-desktop-mid-size) ;
+    text-transform: uppercase;
+    padding-bottom: .5rem;
+  }
+  #tech-section .tech-sub{
+    font-family: var(--sub-font);
+    font-size:var(--lucida-console-desktop-size) ;
+    text-transform: uppercase;
+  }
+
+  #tech-section .vr-line{
+    height: 4rem;
+  }
+  #tech-list{
+    display: flex;
+    align-items: center;
+    margin-left: -6rem;
+    margin-top: 1.5rem;
+  }
+  #tech-list .vr-line{
+    height: 16rem;
+  }
+ 
+#tech-section li{
+    list-style: none;
+}
+
+
+  
+  #tech-list-left {
+    text-align: right; 
+    padding-right: 2rem;
+    font-family: var(--sub-font);
+    font-size:var(--lucida-console-tablet-size) ;
+    text-transform: uppercase;
+  }
+ 
+  
+  #tech-list-right {
+    text-align: left; 
+    padding-left: 2rem;
+    font-family: var(--sub-font);
+    font-size:var(--lucida-console-tablet-size) ;
+    text-transform: uppercase;
+  }
+  #tech-arrow{
+    margin-top: 2rem;
+    display: flex;
+  }
+  #tech-arrow img{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+  }
+  #tech-arrow img:nth-child(1){
+    margin-right: 7rem;
+  }
+  .cta-logo{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    justify-content:space-between;
+  }
+  .cta-left{
+    margin-left: -.4rem;
+  }
+  .cta-right{
+    margin-left: 2rem;
+  }
+  #cta-main a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: var(--sub-font);
+    font-size:var(--lucida-console-desktop-mid-size) ;
+    text-transform: uppercase;
+  }
+  #cta-main img{
+    width: 200px;
+    height: 140px;
+    padding: 0 1rem 0 1rem;
+    margin-left: 2.4rem;
+  }
+  #path-8{
+    margin-top:-1rem;
+    margin-left: .5rem;
+  }
+  #path-8 .hr-line{
+   width: 1134px;
+  }
+  #vr-spread3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #vr-spread3 .vr-single{
+    margin-top: -.5rem;
+    height: 3rem;
+  }
+  .f-sapce1{
+    margin-right: 33rem;
+  }
+  .f-sapce2{
+    margin-left: 40rem;
+    margin-right: -.5rem;
+  }
 
 }
 
